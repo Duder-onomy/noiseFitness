@@ -16,12 +16,18 @@ define([
     return MasseuseRouter.extend({
         userModel : null,
         routes: {
-            '*All': 'getIndex'
+            'login' : 'getLogin',
+            '*default' : 'getIndex'
         },
-        getIndex : getIndex
+        getIndex : getIndex,
+        getLogin : getLogin
     });
 
     function getIndex() {
         loadMainContent('index');
+    }
+
+    function getLogin() {
+        loadMainContent('login');
     }
 });
