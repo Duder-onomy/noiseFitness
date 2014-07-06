@@ -8,7 +8,7 @@ define(['text!noiseFitness/template.html'], function (template) {
             instaUpdate : true
         },
         modelData : {
-            title : 'Hello world!'
+            title : 'Noise Fitness.. Rock.'
         }
     };
 });
