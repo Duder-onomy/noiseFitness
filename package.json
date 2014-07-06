@@ -1,0 +1,55 @@
+{
+  "name": "noiseFitness",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/greglarrenaga/noiseFitness",
+  "author": {
+    "name": "SOLID Interactive",
+    "email": "postmaster@thinksolid.com",
+    "url": "http://thinksolid.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/greglarrenaga/noiseFitness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/greglarrenaga/noiseFitness/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/greglarrenaga/noiseFitness/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.19"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "express": "4.4.5",
+    "requirejs": "^2.1.14"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-build-gh-pages": "1.0.3",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-connect": "0.7.1",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-livereload": "0.1.2",
+    "grunt-contrib-requirejs": "0.4.4",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-requirejs-paths": "0.1.2",
+    "grunt-shell": "0.7.0",
+    "matchdep": "0.3.0",
+    "grunt-release-notes": "0.1.1",
+    "mocha-phantomjs": "3.5.0"
+  },
+  "keywords": [
+    "masseuse"
+  ]
+}
