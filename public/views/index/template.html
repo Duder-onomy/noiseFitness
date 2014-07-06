@@ -1,10 +1,17 @@
 <h1 data-rv-text="model:title"></h1>
-<p>Modify the title: <input type="text" data-rv-value="model:title"/></p>
 
+Modify the title: <input type="text" data-rv-value="model:title"/>
 
-<span>Current Pages Ready to be built:</span>
-<ul>
-    <li>
-        <a href="#login">Login View</a>
-    </li>
-</ul>
+<button data-rv-on-click='view.toggleLoading'>Toggle it Bro</button>
+
+<div data-rv-show='model:loading'>
+    <hr/>
+    <br/>
+
+    <span>Current Pages Ready to be built:</span>
+    <ul>
+        <li>
+            <a href="#login">Login View</a>
+        </li>
+    </ul>
+</div>
