@@ -10,6 +10,7 @@
         "text" : "vendor/requirejs-text/text"
     },
     "views" : {
-        "index" : "views/index"
+        "index" : "views/index",
+        "login" : "views/login"
     }
 }
