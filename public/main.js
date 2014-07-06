@@ -20,7 +20,7 @@
             'rivets' : 'vendor/rivets/dist/rivets',
             'backbone' : 'vendor/backbone-amd/backbone',
             'text' : 'vendor/requirejs-text/text',
-            'noiseFitness' : 'views/noiseFitness'
+            'index' : 'views/index'
         }
     });
 

@@ -1,4 +1,4 @@
-define(['text!noiseFitness/template.html'], function (template) {
+define(['text!index/template.html'], function (template) {
     'use strict';
 
     return {

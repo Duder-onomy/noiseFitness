@@ -1,15 +1,15 @@
 define([
         'jquery',
-        'noiseFitness/view'
+        'index/view'
     ],
     function ($,
-              noiseFitness) {
+              index) {
 
         'use strict';
 
         var currentView,
             viewTypes = {
-                noiseFitness : noiseFitness
+                index : index
             };
 
         return loadMainContent;
