@@ -3,11 +3,18 @@
   "description": "The best project ever.",
   "version": "0.1.0",
   "homepage": "https://github.com/greglarrenaga/noiseFitness",
-  "author": {
-    "name": "SOLID Interactive",
-    "email": "postmaster@thinksolid.com",
-    "url": "http://thinksolid.com"
-  },
+  "contributors" : [
+      {
+          "name": "Greg Larrenaga",
+          "email": "greg.larrenaga@thinksolid.com",
+          "url": "http://thinksolid.com"
+      },
+      {
+          "name": "Jake Fery",
+          "email": "autojake@gmail.com",
+          "url": "http://thinksolid.com"
+      }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/greglarrenaga/noiseFitness.git"

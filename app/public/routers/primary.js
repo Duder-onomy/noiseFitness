@@ -16,12 +16,12 @@ define([
     return MasseuseRouter.extend({
         userModel : null,
         routes: {
-            '*All': 'getnoiseFitness'
+            '*All': 'getIndex'
         },
-        getnoiseFitness : getnoiseFitness
+        getIndex : getIndex
     });
 
-    function getnoiseFitness() {
-        loadMainContent('noiseFitness');
+    function getIndex() {
+        loadMainContent('index');
     }
 });
