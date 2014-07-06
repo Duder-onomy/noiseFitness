@@ -20,6 +20,7 @@
         'routers/primary'
     ], function (Backbone, PrimaryRouter) {
         new PrimaryRouter();
+
         Backbone.history.start();
     });
 }(require));

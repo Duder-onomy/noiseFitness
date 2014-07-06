@@ -20,7 +20,8 @@
             'rivets' : 'vendor/rivets/dist/rivets',
             'backbone' : 'vendor/backbone-amd/backbone',
             'text' : 'vendor/requirejs-text/text',
-            'index' : 'views/index'
+            'index' : 'views/index',
+            'login' : 'views/login'
         }
     });
 
@@ -29,6 +30,7 @@
         'routers/primary'
     ], function (Backbone, PrimaryRouter) {
         new PrimaryRouter();
+
         Backbone.history.start();
     });
 }(require));

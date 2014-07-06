@@ -12,7 +12,7 @@
       {
           "name": "Jake Fery",
           "email": "autojake@gmail.com",
-          "url": "http://thinksolid.com"
+          "url": ""
       }
   ],
   "repository": {
@@ -37,8 +37,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "express": "4.4.5",
-    "requirejs": "^2.1.14"
+    "express": "4.4.5"
   },
   "devDependencies": {
     "grunt": "0.4.5",
@@ -54,7 +53,8 @@
     "grunt-shell": "0.7.0",
     "matchdep": "0.3.0",
     "grunt-release-notes": "0.1.1",
-    "mocha-phantomjs": "3.5.0"
+    "mocha-phantomjs": "3.5.0",
+    "requirejs": "2.1.14"
   },
   "keywords": [
     "masseuse"
