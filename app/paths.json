@@ -11,6 +11,7 @@
     },
     "views" : {
         "index" : "views/index",
-        "login" : "views/login"
+        "login" : "views/login",
+        "logout" : "views/logout"
     }
 }
