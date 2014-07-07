@@ -22,7 +22,8 @@
             'text' : 'vendor/requirejs-text/text',
             'index' : 'views/index',
             'login' : 'views/login',
-            'logout' : 'views/logout'
+            'logout' : 'views/logout',
+            'register' : 'views/register'
         }
     });
 
