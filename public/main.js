@@ -21,7 +21,8 @@
             'backbone' : 'vendor/backbone-amd/backbone',
             'text' : 'vendor/requirejs-text/text',
             'index' : 'views/index',
-            'login' : 'views/login'
+            'login' : 'views/login',
+            'logout' : 'views/logout'
         }
     });
 

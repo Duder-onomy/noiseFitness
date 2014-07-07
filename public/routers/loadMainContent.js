@@ -1,11 +1,12 @@
-define(['jquery', 'index/view', 'login/view'], function ($, index, login) {
+define(['jquery', 'index/view', 'login/view', 'logout/view'], function ($, index, login, logout) {
 
     'use strict';
 
     var currentView,
         viewTypes = {
             index : index,
-            login : login
+            login : login,
+            logout : logout
         };
 
     return loadMainContent;

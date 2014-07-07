@@ -17,17 +17,24 @@ define([
         userModel : null,
         routes: {
             'login' : 'getLogin',
-            '*default' : 'getIndex'
+            'logout' : 'getLogout',
+            '' : 'getIndex'
         },
-        getIndex : getIndex,
-        getLogin : getLogin
+        getLogin : getLogin,
+        getLogout : getLogout,
+        getIndex : getIndex
     });
+
+    function getLogin() {
+        loadMainContent('login');
+    }
+
+    function getLogout() {
+        loadMainContent('logout');
+    }
 
     function getIndex() {
         loadMainContent('index');
     }
 
-    function getLogin() {
-        loadMainContent('login');
-    }
 });
