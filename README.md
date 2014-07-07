@@ -1,18 +1,9 @@
-# noiseFitness
+# Noise Fitness
 
-The best project ever.
+Staging Server [Here](http://noise-fitness.herokuapp.com/)
 
 ## Getting Started
-Install bower and npm dependencies using:
 
 ```shell
-bower install && npm install
+bower install && npm install && grunt server
 ```
-
-Update your release notes using:
-
-```shell
-grunt releaseNotes
-```
-
-Then you probably want to commit the bower dependencies and the newly generate README.md.
