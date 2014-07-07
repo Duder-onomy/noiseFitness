@@ -1,4 +1,4 @@
-define(['text!logout/template.html'], function (template) {
+define(['text!register/template.html'], function (template) {
     'use strict';
 
     return {
