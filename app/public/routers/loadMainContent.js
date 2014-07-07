@@ -1,40 +1,42 @@
-define(['jquery', 'index/view', 'login/view', 'logout/view'], function ($, index, login, logout) {
+define(['jquery', 'index/view', 'login/view', 'logout/view', 'register/view'],
+    function($, index, login, logout, register) {
 
-    'use strict';
+        'use strict';
 
-    var currentView,
-        viewTypes = {
-            index : index,
-            login : login,
-            logout : logout
-        };
+        var currentView,
+            viewTypes = {
+                index : index,
+                login : login,
+                logout : logout,
+                register : register
+            };
 
-    return loadMainContent;
+        return loadMainContent;
 
-    function loadMainContent (ViewType, options) {
+        function loadMainContent (ViewType, options) {
 
-        var $deferred = new $.Deferred(),
-            newView;
+            var $deferred = new $.Deferred(),
+                newView;
 
-        if (!options) {
-            options = {};
+            if (!options) {
+                options = {};
+            }
+
+            newView = new viewTypes[ViewType](options);
+
+            if (currentView) {
+                currentView.remove();
+            }
+
+            newView.start()
+                .done(function () {
+                    currentView = newView;
+                    $deferred.resolve(newView);
+                })
+                .fail(function () {
+                    $deferred.reject();
+                });
+
+            return $deferred.promise();
         }
-
-        newView = new viewTypes[ViewType](options);
-
-        if (currentView) {
-            currentView.remove();
-        }
-
-        newView.start()
-            .done(function () {
-                currentView = newView;
-                $deferred.resolve(newView);
-            })
-            .fail(function () {
-                $deferred.reject();
-            });
-
-        return $deferred.promise();
-    }
-});
+    });
