@@ -18,10 +18,12 @@ define([
         routes: {
             'login' : 'getLogin',
             'logout' : 'getLogout',
+            'register' : 'getRegister',
             '' : 'getIndex'
         },
         getLogin : getLogin,
         getLogout : getLogout,
+        getRegister : getRegister,
         getIndex : getIndex
     });
 
@@ -31,6 +33,10 @@ define([
 
     function getLogout() {
         loadMainContent('logout');
+    }
+
+    function getRegister() {
+        loadMainContent('register');
     }
 
     function getIndex() {
